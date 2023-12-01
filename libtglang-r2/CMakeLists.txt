@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+project(tglang VERSION 2.0.0 LANGUAGES CXX)
+find_library(LIBFASTTEXT ${CMAKE_SOURCE_DIR}/resources/libfasttext.a)
+add_library(tglang SHARED tglang.cpp)
+target_include_directories(tglang PRIVATE ${CMAKE_SOURCE_DIR})
+target_link_libraries(tglang ${CMAKE_SOURCE_DIR}/resources/libfasttext.a)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -pthread")
