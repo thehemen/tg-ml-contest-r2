@@ -116,6 +116,8 @@ Good luck!
 
 ## Results
 
+This solution is among winners with the 4th place in [the leaderboard](https://contest.com/ml2023-r2).
+
 |Name|Value|
 |----|-----|
 |Code Language Detection|71.9|
